@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('Inter-Medium') format('ttf');
+}
+
+body {
+  font-family: 'CustomFont', sans-serif;
+  font-size: 13px;
+  background-color: #1a1a1a;
+  margin: 25px;
+  padding: 25px;
+  color: #bdbdbd;
+  font-weight: 600;
+  text-shadow: 0 0 1px #2e2c2c, 0 0 2px #030303;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.checkbox-container {
+    width: 400px;
+    max-height: 400px;
+    background-color: #403e3e;
+    border: 1px solid #0f0f0f;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+    border-radius: 8px;
+}
+
+.additional-box {
+    width: 200px;
+    height: 100px;
+    background-color: #403e3e;
+    border: 1px solid #0f0f0f;
+    border-radius: 8px;
+    margin-left: 10px; 
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0f0f0f; 
+}
+
+.title::before {
+  content: 'EXAMPLE';
+  color: #0f0f0f; 
+}
+
+.title::after {
+  content: '.CC';
+  color: blue; 
+  text-shadow: 0 0 1px #0000ff50, 0 0 2px #0000ff40, 0 0 3px #0000ff30, 0 0 4px #0000ff20, 0 0 5px #0000ff10; 
+}
+
+.separator {
+  border-top: 4px solid #bbb;
+  border-radius: 5px;
+  height: 2px;
+  background-color: #1a1a1a; 
+  margin: 5px 0;
+}
+
+input[type='checkbox'] {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.aimbot-options {
+  display: none;
+  padding-left: 10px; 
+}
+
+.aimbot-options input[type='checkbox'],
+.aimbot-options input[type='range'] {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.esp-options {
+  display: none;
+  padding-left: 10px; 
+}
+
+.esp-options input[type='checkbox'],
+.esp-options input[type='range'] {
+  margin-bottom: 10px;
+  color: white;
+}

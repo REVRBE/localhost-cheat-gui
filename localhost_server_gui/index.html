@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="checkbox-container">
+        <div class="title"></div>
+        <div class="separator"></div>
+        <form>
+            <input type="checkbox" id="aimbot" name="aimbot" value="off" onchange="update_aimbot(this)">
+            <label for="aimbot"> Aimbot</label><br>
+				<div class="aimbot-options">
+					<input type="checkbox" id="silent_aim" name="silent_aim" value="off" onchange="update_silent_aim(this)">
+					<label for="silent_aim"> Silent Aim</label><br>
+					<input type="checkbox" id="visibility_check" name="visibility_check" value="off" onchange="update_visibility_check(this)">
+					<label for="visibility_check"> Visibility Check</label><br>
+					<input type="range" id="fovSlider" name="fovSlider" min="1" max="90" value="0" oninput="update_fov(this)"><br>
+					<input type="range" id="smoothnessSlider" name="smoothnessSlider" min="1" max="20" value="0" oninput="update_smoothness(this)"><br>
+				</div>
+
+            <input type="checkbox" id="esp" name="esp" value="off" onchange="update_esp(this)">
+            <label for="esp"> ESP</label><br>
+            <div class="esp-options">
+                <input type="checkbox" id="checkbox1" name="checkbox1" value="off" onchange="update_checkbox1(this)">
+                <label for="checkbox1"> Option 1</label><br>
+                <input type="checkbox" id="checkbox2" name="checkbox2" value="off" onchange="update_checkbox2(this)">
+                <label for="checkbox2"> Option 2</label><br>
+                <input type="range" id="slider3" name="slider3" min="0" max="100" value="0"><br>
+                <input type="range" id="slider4" name="slider4" min="0" max="100" value="0"><br>
+            </div>
+            <input type="checkbox" id="bunnyhop" name="bunnyhop" value="off" onchange="update_bunnyhop(this)">
+            <label for="bunnyhop"> Bunnyhop</label><br>
+            <!-- Add more checkboxes here as needed -->
+        </form>
+    </div>
+</div>
+</body>
+</html>
